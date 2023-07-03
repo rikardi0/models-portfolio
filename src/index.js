@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import DronElement from "./components/3D-models/Dron/DronElement";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+  </React.StrictMode>
+);
+const dron = ReactDOM.createRoot(document.getElementById("dron"));
+dron.render(
+  <React.StrictMode>
+    <DronElement />
   </React.StrictMode>
 );
 
