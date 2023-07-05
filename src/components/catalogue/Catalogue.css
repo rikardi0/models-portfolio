@@ -1,0 +1,118 @@
+.active-modal-contact {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#container-catalogue {
+  width: 100vw;
+  height: fit-content;
+  gap: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(0, 0, 0);
+  z-index: -10;
+}
+.img-catalogue {
+  height: auto;
+  width: 100vw;
+}
+#info-container {
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+  padding-block: 40px;
+  width: fit-content;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+.info-img {
+  height: fit-content;
+  width: fit-content;
+  user-select: none;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: black;
+}
+.button-info {
+  user-select: none;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 100%;
+  border: 5px solid rgb(255, 102, 0);
+  color: rgb(236, 189, 155);
+  transition: all 0.25s ease-in-out;
+}
+.button-info:hover,
+.info-img:hover ~ .button-info {
+  color: rgb(255, 102, 0);
+  border: 5px solid rgb(0, 0, 0);
+}
+#modal-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(148, 148, 148, 0.856);
+}
+#modal {
+  z-index: 40;
+  width: 100%;
+  height: fit-content;
+  max-height: 1000px;
+  background-color: rgb(255, 255, 255);
+  animation: windowOpen 0.25s ease-out;
+}
+#close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.808);
+  height: 105px;
+  width: 105px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: -55px;
+  animation: slideInFromBottom 0.65s ease-out;
+  transition: all 0.25s ease-in-out;
+}
+#close-btn:hover {
+  rotate: 45deg;
+}
+@keyframes windowOpen {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
