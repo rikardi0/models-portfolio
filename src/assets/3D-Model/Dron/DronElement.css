@@ -1,0 +1,16 @@
+.vr {
+  margin: auto;
+  user-select: none;
+  width: 75%;
+  border: 10px double white;
+}
+#viewer {
+  background-color: black;
+  z-index: 1000;
+}
+@media only screen and (min-width: 450px) {
+  .vr {
+    width: 55%;
+    border: 20px double white;
+  }
+}

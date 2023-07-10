@@ -1,0 +1,57 @@
+#black-spacer {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background-color: black;
+}
+
+#orange-spacer {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(255, 102, 0);
+}
+#description-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding-inline: 20px;
+}
+.description-content {
+  margin-top: 20px;
+  font-weight: 300;
+}
+#exploded-img {
+  background-color: aqua;
+  margin-top: 15px;
+  width: 60%;
+}
+#btn-details {
+  font-size: 1.45rem;
+  width: fit-content;
+  font-family: "Inconsolata";
+  letter-spacing: 2px;
+  background-color: rgb(255, 205, 130);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px 20px;
+  margin-block-start: 25px;
+  transition: all 0.5s;
+}
+#btn-details:hover {
+  background-color: rgb(255, 153, 0);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+@media only screen and (min-width: 900px) {
+  #description-text {
+    padding-inline: 90px;
+    padding-block: 5px;
+    font-size: 2.25rem;
+  }
+  #btn-details {
+    font-size: 2.5rem;
+  }
+}
