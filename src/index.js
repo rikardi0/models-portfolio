@@ -1,20 +1,31 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
+import DronDetails from "../src/components/dron-details/DronDetails.js";
 import reportWebVitals from "./reportWebVitals";
-import DronElement from "./components/3D-models/Dron/DronElement";
+import "./index.css";
+import ContactPage from "./components/contact/ContactPage";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/Contact",
+    element: <ContactPage />,
+  },
+  {
+    path: "/dron-model",
+    element: <DronDetails />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-const dron = ReactDOM.createRoot(document.getElementById("dron"));
-dron.render(
-  <React.StrictMode>
-    <DronElement />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
