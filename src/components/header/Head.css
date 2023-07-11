@@ -1,46 +1,40 @@
 body {
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(206, 206, 206);
+  overflow-x: hidden;
 }
-
+#menu {
+  margin-bottom: 30px;
+}
 #head {
   background-color: rgb(0, 0, 0);
   z-index: -1;
   color: white;
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
-  padding-inline: 70px;
-  padding-block: 40px;
-  font-size: 5.75rem;
-  font-weight: 600;
-  height: 250px;
-}
-#head-subtext {
-  font-weight: 300;
-  font-size: 3.5rem;
-  letter-spacing: 10px;
-  z-index: 10;
+  height: 25px;
+  width: 100vw;
 }
 #dron-img {
   position: absolute;
-  z-index: 1;
-  height: 430px;
-  top: 175px;
+  height: 135px;
+  top: 5px;
   right: 0px;
 }
 #dron-img-shadow {
-  opacity: 0.65;
+  opacity: 0.05;
   position: absolute;
   position: absolute;
   z-index: 0;
-  height: 350px;
-  top: 230px;
-  right: 120px;
+  height: 120px;
+  top: 20px;
+  right: 40px;
 }
 #line-orange {
-  margin-top: 10px;
-  background-color: rgb(255, 102, 0);
-  height: 5px;
-  border-top: 5px solid white;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  height: 2px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -49,49 +43,157 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 .triangle {
-  width: 95vw;
+  width: 80vw;
   height: 0;
   border-right: 50px solid transparent;
 }
 #orange-tri {
-  border-top: 150px solid rgb(255, 102, 0);
+  border-top: 50px solid rgb(255, 102, 0);
 }
 #white-tri {
-  width: 95vw;
-  border-top: 140px solid rgb(255, 255, 255);
+  width: 80vw;
+  border-top: 50px solid rgb(255, 255, 255);
 }
 
 #spacer-black {
   height: 20px;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.637);
   width: 100vw;
   background-color: black;
 }
 #call-to-action {
   display: flex;
-  padding-inline: 40px;
+  padding-block-start: 10px;
   flex-direction: column;
 }
 #head-subtext2 {
-  font-size: 5rem;
-  font-weight: 800;
-  z-index: 10;
+  padding-inline: 20px;
+  font-size: 2rem;
+  font-weight: 600;
 }
-#head-subtext3 {
-  font-size: 4.5rem;
+.head-subtext3 {
+  padding-inline: 20px;
+  font-size: 1rem;
   font-weight: 300;
-  z-index: 10;
-  margin-top: 5px;
-  line-height: 100px;
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #head-subtext4 {
+  background-color: rgb(255, 157, 92);
+  padding-block: 10px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 20px;
-  font-size: 4.5rem;
-  font-weight: 900;
-  z-index: 10;
+  margin-top: 25px;
+  letter-spacing: 10px;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 450px) {
+  #head {
+    height: 60px;
+  }
+  #menu {
+    margin-bottom: 50px;
+  }
+  #dron-img {
+    height: 290px;
+    top: 0px;
+  }
+  #dron-img-shadow {
+    height: 285px;
+    top: 0px;
+  }
+  .triangle {
+    width: 90vw;
+  }
+  #orange-tri {
+    border-top: 100px solid rgb(255, 102, 0);
+  }
+  #white-tri {
+    border-top: 100px solid rgb(255, 255, 255);
+  }
+  #head-subtext2 {
+    font-size: 3rem;
+  }
+  .head-subtext3 {
+    font-size: 2rem;
+  }
+  #head-subtext4 {
+    font-size: 2.75rem;
+    letter-spacing: 20px;
+  }
+}
+@media only screen and (min-width: 450px) {
+  #menu {
+    margin-bottom: 55px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #head {
+    height: 100px;
+  }
+  #menu {
+    margin-bottom: 90px;
+  }
+  #orange-tri {
+    border-top: 120px solid rgb(255, 102, 0);
+  }
+  #white-tri {
+    border-top: 120px solid rgb(255, 255, 255);
+  }
+  #dron-img {
+    height: 375px;
+    top: 0px;
+    right: 45px;
+  }
+  #dron-img-shadow {
+    height: 340px;
+    top: 10px;
+    right: 120px;
+  }
+  #head-subtext2 {
+    font-size: 5rem;
+    padding-inline: 90px;
+  }
+  .head-subtext3 {
+    padding-inline: 90px;
+    padding-block: 10px;
+    font-size: 2.65rem;
+  }
+  #head-subtext4 {
+    font-size: 5rem;
+    letter-spacing: 20px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #dron-img {
+    height: 450px;
+    top: 0px;
+    right: 150px;
+  }
+  #dron-img-shadow {
+    height: 350px;
+    top: 70px;
+    right: 330px;
+  }
+  #orange-tri {
+    border-top: 160px solid rgb(255, 102, 0);
+  }
+  #white-tri {
+    width: 90vw;
+    border-top: 160px solid rgb(255, 255, 255);
+  }
+}
+@keyframes slideOutToBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
 }

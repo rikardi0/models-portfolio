@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "@formspree/react";
-import "./ContactSection.css";
+import "./Contact.css";
 
 const ContactSection = () => {
   const [state, handleSubmit] = useForm("xleyergl");

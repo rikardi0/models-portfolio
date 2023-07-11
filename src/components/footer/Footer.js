@@ -19,8 +19,8 @@ function Footer() {
   return (
     <>
       <div className="contact-title" onClick={handleClick}>
-        <span>Contact us for any questions</span>
-        <div className="button-container">{">"}</div>
+        <span>Contact us</span>
+        <div className="button-container"></div>
       </div>
       {showModalContact && (
         <div id="modal-container-contact">
